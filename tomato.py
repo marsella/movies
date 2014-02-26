@@ -2,11 +2,12 @@ import requests
 import json
 import unicodedata
 import operator
+import secrets
 
 API_URI    = "http://api.rottentomatoes.com/api/public/v1.0/"
 BOX_OFFICE = "lists/movies/box_office.json"
 THEATERS   = "lists/dvds/top_rentals.json"
-API_KEY    = "GetYourOwn"
+API_KEY    = secrets.API_KEY
 MOVIES     = "movies.json"
 
 num_movies = '50'
